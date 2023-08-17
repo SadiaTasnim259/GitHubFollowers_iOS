@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-31" y="-213"/>
         </scene>
-        <!--View Controller-->
+        <!--Follower List View Controller-->
         <scene sceneID="I62-oS-fJ2">
             <objects>
-                <viewController id="ZVJ-X5-lc4" sceneMemberID="viewController">
+                <viewController id="ZVJ-X5-lc4" customClass="FollowerListViewController" customModule="GitHubFollowers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="neG-Ic-AzN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="998" y="-213"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorites List View Controller-->
         <scene sceneID="ibp-T3-Vql">
             <objects>
-                <viewController id="tt1-64-4ND" sceneMemberID="viewController">
+                <viewController id="tt1-64-4ND" customClass="FavoritesListViewController" customModule="GitHubFollowers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6uc-8g-OB7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="-31" y="499"/>
         </scene>
-        <!--View Controller-->
+        <!--User Info View Controller-->
         <scene sceneID="jgs-RA-NrM">
             <objects>
-                <viewController id="kDo-Vi-rJ1" sceneMemberID="viewController">
+                <viewController id="kDo-Vi-rJ1" customClass="UserInfoViewController" customModule="GitHubFollowers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ci4-xq-5Cd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
