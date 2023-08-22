@@ -15,6 +15,7 @@
 		04100F952A8E74340024D4A1 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04100F942A8E74340024D4A1 /* FollowerListViewController.swift */; };
 		04100F972A8E74550024D4A1 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04100F962A8E74550024D4A1 /* FavoritesListViewController.swift */; };
 		04100F992A8E74680024D4A1 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04100F982A8E74680024D4A1 /* UserInfoViewController.swift */; };
+		04FFA93B2A948AD9006F259A /* GitHubFollowerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFA93A2A948AD9006F259A /* GitHubFollowerButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		04100F942A8E74340024D4A1 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
 		04100F962A8E74550024D4A1 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		04100F982A8E74680024D4A1 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		04FFA93A2A948AD9006F259A /* GitHubFollowerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFollowerButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				04100F892A8E72880024D4A1 /* Assets.xcassets */,
 				04100F8B2A8E72880024D4A1 /* LaunchScreen.storyboard */,
 				04100F8E2A8E72880024D4A1 /* Info.plist */,
+				04FFA93A2A948AD9006F259A /* GitHubFollowerButton.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				04100F972A8E74550024D4A1 /* FavoritesListViewController.swift in Sources */,
 				04100F992A8E74680024D4A1 /* UserInfoViewController.swift in Sources */,
+				04FFA93B2A948AD9006F259A /* GitHubFollowerButton.swift in Sources */,
 				04100F952A8E74340024D4A1 /* FollowerListViewController.swift in Sources */,
 				04100F852A8E72860024D4A1 /* SearchViewController.swift in Sources */,
 				04100F812A8E72860024D4A1 /* AppDelegate.swift in Sources */,
