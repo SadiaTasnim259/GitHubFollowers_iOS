@@ -12,6 +12,10 @@ class SearchViewController: UIViewController {
     let logoImageView = UIImageView()
     let usernameTextField = GitHubFollowerTextField()
     let callToActionButton = GitHubFollowerButton(backgroundColor: .systemGreen, title: "Get Followers")
+    
+    var isUsernameEntered: Bool{
+        return !usernameTextField.text!.isEmpty
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +37,10 @@ class SearchViewController: UIViewController {
     }
     
     @objc func pushFollowerListVC(){
+        guard isUsernameEntered else{
+            print("No username")
+            return
+        }
         let followerListViewController = FollowerListViewController()
         followerListViewController.username = usernameTextField.text
         followerListViewController.title = usernameTextField.text
