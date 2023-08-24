@@ -11,6 +11,7 @@ class GithubFollowerTitleLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -21,6 +22,7 @@ class GithubFollowerTitleLabel: UILabel {
         super.init(frame: .zero)
         self.textAlignment = textAlignment
         self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
+        configure()
     }
     
     private func configure(){
