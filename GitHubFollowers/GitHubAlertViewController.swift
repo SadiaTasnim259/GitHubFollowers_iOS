@@ -35,6 +35,8 @@ class GitHubAlertViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
         configureContailerView()
+        configureTitleLabel()
+        configureActionButton()
     }
     
     func configureContailerView(){
@@ -67,6 +69,18 @@ class GitHubAlertViewController: UIViewController {
 
     func configureActionButton(){
         containerView.addSubview(actionButton)
+        actionButton.setTitle(buttonTitle ?? "ok", for: .normal)
+        actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
         
+        NSLayoutConstraint.activate([
+            actionButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -padding),
+            actionButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+            actionButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+            actionButton.heightAnchor.constraint(equalToConstant: 44)
+        ])
+    }
+    
+    @objc func dismissVC(){
+        dismiss(animated: true)
     }
 }
