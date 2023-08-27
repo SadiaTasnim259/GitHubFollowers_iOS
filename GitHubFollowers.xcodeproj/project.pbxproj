@@ -72,23 +72,63 @@
 		04100F7F2A8E72860024D4A1 /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				04100F802A8E72860024D4A1 /* AppDelegate.swift */,
-				04100F822A8E72860024D4A1 /* SceneDelegate.swift */,
+				04FA4BBB2A9BA1A900EE2AC0 /* Alert Controller */,
+				04FA4BB72A9BA19F00EE2AC0 /* Support */,
+				04FA4BB62A9BA19C00EE2AC0 /* Extensions */,
+				04FA4BB52A9BA19A00EE2AC0 /* Custom Views */,
+				04FA4BB42A9BA19700EE2AC0 /* Screens */,
+				04100F892A8E72880024D4A1 /* Assets.xcassets */,
+				04100F8B2A8E72880024D4A1 /* LaunchScreen.storyboard */,
+				04100F8E2A8E72880024D4A1 /* Info.plist */,
+			);
+			path = GitHubFollowers;
+			sourceTree = "<group>";
+		};
+		04FA4BB42A9BA19700EE2AC0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
 				04100F842A8E72860024D4A1 /* SearchViewController.swift */,
 				04100F942A8E74340024D4A1 /* FollowerListViewController.swift */,
 				04100F962A8E74550024D4A1 /* FavoritesListViewController.swift */,
 				04100F982A8E74680024D4A1 /* UserInfoViewController.swift */,
-				04100F892A8E72880024D4A1 /* Assets.xcassets */,
-				04100F8B2A8E72880024D4A1 /* LaunchScreen.storyboard */,
-				04100F8E2A8E72880024D4A1 /* Info.plist */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		04FA4BB52A9BA19A00EE2AC0 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
 				04FFA93A2A948AD9006F259A /* GitHubFollowerButton.swift */,
 				04FFA93E2A952D0F006F259A /* GitHubFollowerTextField.swift */,
 				04859A3F2A979BF0009D9847 /* GithubFollowerTitleLabel.swift */,
 				04859A452A97BDF8009D9847 /* GitHubFollowerBodyLabel.swift */,
-				0411CAE52A98FE7E000830DF /* GitHubAlertViewController.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		04FA4BB62A9BA19C00EE2AC0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
 				04B01F352A9A5D2000D6CEB6 /* UIViewController+Ext.swift */,
 			);
-			path = GitHubFollowers;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		04FA4BB72A9BA19F00EE2AC0 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				04100F802A8E72860024D4A1 /* AppDelegate.swift */,
+				04100F822A8E72860024D4A1 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		04FA4BBB2A9BA1A900EE2AC0 /* Alert Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0411CAE52A98FE7E000830DF /* GitHubAlertViewController.swift */,
+			);
+			path = "Alert Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
