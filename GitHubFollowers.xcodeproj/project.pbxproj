@@ -20,6 +20,7 @@
 		04859A462A97BDF8009D9847 /* GitHubFollowerBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04859A452A97BDF8009D9847 /* GitHubFollowerBodyLabel.swift */; };
 		04B01F362A9A5D2000D6CEB6 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B01F352A9A5D2000D6CEB6 /* UIViewController+Ext.swift */; };
 		04FA4BBE2A9BA35400EE2AC0 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA4BBD2A9BA35400EE2AC0 /* Follower.swift */; };
+		04FA4BC02A9BA38900EE2AC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA4BBF2A9BA38900EE2AC0 /* User.swift */; };
 		04FFA93B2A948AD9006F259A /* GitHubFollowerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFA93A2A948AD9006F259A /* GitHubFollowerButton.swift */; };
 		04FFA93F2A952D0F006F259A /* GitHubFollowerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FFA93E2A952D0F006F259A /* GitHubFollowerTextField.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		04859A452A97BDF8009D9847 /* GitHubFollowerBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFollowerBodyLabel.swift; sourceTree = "<group>"; };
 		04B01F352A9A5D2000D6CEB6 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		04FA4BBD2A9BA35400EE2AC0 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		04FA4BBF2A9BA38900EE2AC0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04FFA93A2A948AD9006F259A /* GitHubFollowerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFollowerButton.swift; sourceTree = "<group>"; };
 		04FFA93E2A952D0F006F259A /* GitHubFollowerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFollowerTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				04FA4BBD2A9BA35400EE2AC0 /* Follower.swift */,
+				04FA4BBF2A9BA38900EE2AC0 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				04FFA93B2A948AD9006F259A /* GitHubFollowerButton.swift in Sources */,
 				04FFA93F2A952D0F006F259A /* GitHubFollowerTextField.swift in Sources */,
 				04100F952A8E74340024D4A1 /* FollowerListViewController.swift in Sources */,
+				04FA4BC02A9BA38900EE2AC0 /* User.swift in Sources */,
 				04100F852A8E72860024D4A1 /* SearchViewController.swift in Sources */,
 				04FA4BBE2A9BA35400EE2AC0 /* Follower.swift in Sources */,
 				04100F812A8E72860024D4A1 /* AppDelegate.swift in Sources */,
