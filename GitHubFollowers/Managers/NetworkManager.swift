@@ -8,12 +8,12 @@
 import Foundation
 
 class NetworkManager{
-    let shared = NetworkManager()
+    static let shared = NetworkManager()
     
     private init() {}
     
     func getFollowers(for username: String, page: Int, completed: @escaping ([Follower]?, String?) -> Void) {
-        let END_POINT = API.BASE_URL+"/users/\(username)/followers?per_page=100&page=\(page)"
+        let END_POINT = API.BASE_URL+"\(username)/followers?per_page=100&page=\(page)"
         
         guard let url = URL(string: END_POINT) else{
             completed(nil, "This username created an invalid request. Please try again.")
