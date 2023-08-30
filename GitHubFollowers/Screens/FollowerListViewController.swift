@@ -16,14 +16,23 @@ class FollowerListViewController: UIViewController {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        NetworkManager.shared.getFollowers(for: username, page: 1) { followers, errorMessage in
-            guard let followers = followers else{
-                self.presentGitHubAlertViewcontrollerOnMainThread(title: "Bad stuff Happend", message: errorMessage!, buttonTitle: "OK")
-                return
+        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+// new way
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                self.presentGitHubAlertViewcontrollerOnMainThread(title: "Bad stuff Happend", message: failure.rawValue, buttonTitle: "OK")
             }
-            print("Followers.count = \(followers.count)")
-            print(followers)
         }
+        
+        //old way
+        //            guard let followers = followers else{
+        //                self.presentGitHubAlertViewcontrollerOnMainThread(title: "Bad stuff Happend", message: errorMessage!.rawValue, buttonTitle: "OK")
+        //                return
+        //            }
+        //            print("Followers.count = \(followers.count)")
+        //            print(followers)
     }
     
     override func viewWillAppear(_ animated: Bool) {
