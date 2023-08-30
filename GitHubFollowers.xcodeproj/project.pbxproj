@@ -17,6 +17,7 @@
 		04100F992A8E74680024D4A1 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04100F982A8E74680024D4A1 /* UserInfoViewController.swift */; };
 		0411CAE62A98FE7E000830DF /* GitHubAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411CAE52A98FE7E000830DF /* GitHubAlertViewController.swift */; };
 		043C666D2A9FA4290000FBF0 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C666C2A9FA4290000FBF0 /* FollowerCell.swift */; };
+		043C666F2A9FA5740000FBF0 /* GitHubFollowerAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C666E2A9FA5740000FBF0 /* GitHubFollowerAvatarImageView.swift */; };
 		04859A402A979BF0009D9847 /* GithubFollowerTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04859A3F2A979BF0009D9847 /* GithubFollowerTitleLabel.swift */; };
 		04859A462A97BDF8009D9847 /* GitHubFollowerBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04859A452A97BDF8009D9847 /* GitHubFollowerBodyLabel.swift */; };
 		04B01F362A9A5D2000D6CEB6 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B01F352A9A5D2000D6CEB6 /* UIViewController+Ext.swift */; };
@@ -42,6 +43,7 @@
 		04100F982A8E74680024D4A1 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		0411CAE52A98FE7E000830DF /* GitHubAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAlertViewController.swift; sourceTree = "<group>"; };
 		043C666C2A9FA4290000FBF0 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		043C666E2A9FA5740000FBF0 /* GitHubFollowerAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFollowerAvatarImageView.swift; sourceTree = "<group>"; };
 		04859A3F2A979BF0009D9847 /* GithubFollowerTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubFollowerTitleLabel.swift; sourceTree = "<group>"; };
 		04859A452A97BDF8009D9847 /* GitHubFollowerBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubFollowerBodyLabel.swift; sourceTree = "<group>"; };
 		04B01F352A9A5D2000D6CEB6 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				04FFA93E2A952D0F006F259A /* GitHubFollowerTextField.swift */,
 				04859A3F2A979BF0009D9847 /* GithubFollowerTitleLabel.swift */,
 				04859A452A97BDF8009D9847 /* GitHubFollowerBodyLabel.swift */,
+				043C666E2A9FA5740000FBF0 /* GitHubFollowerAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				04D5489C2A9C2E1D00214EDA /* NetworkManager.swift in Sources */,
 				04859A402A979BF0009D9847 /* GithubFollowerTitleLabel.swift in Sources */,
 				04100F832A8E72860024D4A1 /* SceneDelegate.swift in Sources */,
+				043C666F2A9FA5740000FBF0 /* GitHubFollowerAvatarImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
