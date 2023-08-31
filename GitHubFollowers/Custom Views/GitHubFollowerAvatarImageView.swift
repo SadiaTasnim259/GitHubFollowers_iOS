@@ -9,7 +9,7 @@ import UIKit
 
 class GitHubFollowerAvatarImageView: UIImageView {
 
-    let placeholderImage = UIImage(named: "")
+    let placeholderImage = UIImage(named: "avatarIMG")
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
