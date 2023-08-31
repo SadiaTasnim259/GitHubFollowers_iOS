@@ -56,9 +56,9 @@ class NetworkManager{
     
     func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], ErrorMessage>) -> Void) {
         
-        let END_POINT = API.BASE_URL+" \(username)/followers?per_page=100&page=\(page)"
+        let endPoint = API.BASE_URL+"\(username)/followers?per_page=100&page=\(page)"
         
-        guard let url = URL(string: END_POINT) else{
+        guard let url = URL(string: endPoint) else{
             completed(.failure(.invalidUsername))
             return
         }
@@ -89,7 +89,6 @@ class NetworkManager{
                 completed(.failure(.invalidData))
             }
         }
-        
         task.resume()
     }
 }
