@@ -14,6 +14,8 @@ class FollowerListViewController: UIViewController {
     }
     
     var username: String!
+    var followers:[Follower] = []
+    
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
 
@@ -42,7 +44,7 @@ class FollowerListViewController: UIViewController {
     func configureCollectionView(){
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createThreeColumnFlowLayout())
         view.addSubview(collectionView)
-        collectionView.backgroundColor = .systemPink
+        collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
     
@@ -73,7 +75,8 @@ class FollowerListViewController: UIViewController {
 // new way
             switch result {
             case .success(let success):
-                print(success)
+                self.followers = success
+                self.updateData()
             case .failure(let failure):
                 self.presentGitHubAlertViewcontrollerOnMainThread(title: "Bad stuff Happend", message: failure.rawValue, buttonTitle: "OK")
             }
@@ -86,6 +89,15 @@ class FollowerListViewController: UIViewController {
         //            }
         //            print("Followers.count = \(followers.count)")
         //            print(followers)
+    }
+    
+    func updateData(){
+        var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
+        snapshot.appendSections([.main])
+        snapshot.appendItems(followers)
+        DispatchQueue.main.async { [self] in
+            dataSource.apply(snapshot, animatingDifferences: true, completion: nil)
+        }
     }
     
 }
