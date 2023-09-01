@@ -23,25 +23,9 @@ class FollowerListViewController: UIViewController {
         configureViewController()
         configureCollectionView()
         configureDataSource()
-        
-        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
-// new way
-            switch result {
-            case .success(let success):
-                print(success)
-            case .failure(let failure):
-                self.presentGitHubAlertViewcontrollerOnMainThread(title: "Bad stuff Happend", message: failure.rawValue, buttonTitle: "OK")
-            }
-        }
-        
-        //old way
-        //            guard let followers = followers else{
-        //                self.presentGitHubAlertViewcontrollerOnMainThread(title: "Bad stuff Happend", message: errorMessage!.rawValue, buttonTitle: "OK")
-        //                return
-        //            }
-        //            print("Followers.count = \(followers.count)")
-        //            print(followers)
+        getFollowers()
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -83,5 +67,26 @@ class FollowerListViewController: UIViewController {
             return cell
         })
     }
+    
+    func getFollowers(){
+        NetworkManager.shared.getFollowers(for: username, page: 1) { result in
+// new way
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                self.presentGitHubAlertViewcontrollerOnMainThread(title: "Bad stuff Happend", message: failure.rawValue, buttonTitle: "OK")
+            }
+        }
+        
+        //old way
+        //            guard let followers = followers else{
+        //                self.presentGitHubAlertViewcontrollerOnMainThread(title: "Bad stuff Happend", message: errorMessage!.rawValue, buttonTitle: "OK")
+        //                return
+        //            }
+        //            print("Followers.count = \(followers.count)")
+        //            print(followers)
+    }
+    
 }
 
