@@ -9,14 +9,20 @@ import UIKit
 
 class FollowerListViewController: UIViewController {
     
+    enum Section{
+        case main
+    }
+    
     var username: String!
     var collectionView: UICollectionView!
+    var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureViewController()
         configureCollectionView()
+        configureDataSource()
         
         NetworkManager.shared.getFollowers(for: username, page: 1) { result in
 // new way
@@ -68,6 +74,14 @@ class FollowerListViewController: UIViewController {
         flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth + 40)
         
         return flowLayout
+    }
+    
+    func configureDataSource(){
+        dataSource = UICollectionViewDiffableDataSource<Section, Follower>(collectionView: collectionView, cellProvider: { collectionView, indexPath, follower in
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseID, for: indexPath) as! FollowerCell
+            cell.set(follower: follower)
+            return cell
+        })
     }
 }
 
