@@ -12,7 +12,7 @@ class GitHubAlertViewController: UIViewController {
     let containerView = UIView()
     let titleLabel = GithubFollowerTitleLabel(textAlignment: .center, fontSize: 20)
     let messageLabel = GitHubFollowerBodyLabel(textAlignment: .center)
-    let actionButton = GitHubFollowerButton(backgroundColor: .systemMint, title: "ok")
+    let actionButton = GitHubFollowerButton(backgroundColor: .systemOrange, title: "ok")
     
     var alertTitle: String?
     var message: String?
