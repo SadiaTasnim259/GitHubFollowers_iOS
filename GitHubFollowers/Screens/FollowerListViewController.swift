@@ -43,6 +43,7 @@ class FollowerListViewController: UIViewController {
     func configureCollectionView(){
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view) )
         view.addSubview(collectionView)
+        collectionView.delegate = self
         collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
     }
@@ -87,4 +88,17 @@ class FollowerListViewController: UIViewController {
     }
     
 }
+
+extension FollowerListViewController: UICollectionViewDelegate {
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        // Scroll করা শেষ হলে এই func কাজ করবে।
+        let offsetY = scrollView.contentOffset.y
+        let constentHeight = scrollView.contentSize.height
+        let height = scrollView.frame.size.height
+        
+        
+    }
+}
+
 
