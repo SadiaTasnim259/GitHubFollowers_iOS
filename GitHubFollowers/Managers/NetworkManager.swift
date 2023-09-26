@@ -5,10 +5,11 @@
 //  Created by Sadia on 28/8/23.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager{
     static let shared = NetworkManager()
+    let cache = NSCache<NSString, UIImage>() //memory management এর জন্য cache use করছি।
     
     private init() {}
    
