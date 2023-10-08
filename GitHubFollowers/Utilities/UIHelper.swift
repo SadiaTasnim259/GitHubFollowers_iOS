@@ -8,7 +8,7 @@
 import UIKit
 
 struct UIHelper {
-    
+    //static এর জন্য project এর সব যায়গা থেকে access করা যাবে।
     static func createThreeColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout{ //detarmine how my collection view will looks.
         let width = view.bounds.width
         let padding:CGFloat = 12

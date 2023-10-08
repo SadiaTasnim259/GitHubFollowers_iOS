@@ -58,6 +58,7 @@ class FollowerListViewController: UIViewController {
     
     func getFollowers(){
         NetworkManager.shared.getFollowers(for: username, page: 1) { [weak self] result in
+            // [weak self] এর যায়গায় [unowned self] use করলে force unwrap করে তখন option unwrap করতে হয়না। কিন্তু safe এটা না।
 // new way
             guard let self = self else {return}
             switch result {
